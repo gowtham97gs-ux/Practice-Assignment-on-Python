@@ -2,7 +2,7 @@ import psutil
 import time
 
 def monitor_cpu(threshold=80, interval=1):
-    print("Monitoring CPU usage... (Press Ctrl+C to stop)")
+    print("Monitoring CPU usage...")
     try:
         while True:
             cpu_usage = psutil.cpu_percent(interval=interval)
@@ -17,4 +17,5 @@ def monitor_cpu(threshold=80, interval=1):
 
 
 if __name__ == "__main__":
+
     monitor_cpu(threshold=80, interval=1)
